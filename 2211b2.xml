@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE studentdetails[
+<!ELEMENT studentdetails (student*)>
+<!ELEMENT student ( name , age , course)>
+<!ELEMENT name ( #PCDATA)>
+<!ELEMENT age ( #PCDATA)>
+<!ELEMENT course ( #PCDATA)>
+<!ATTLIST student id CDATA "ID_1">
+<!ATTLIST student id CDATA "ID_2">
+<!ATTLIST student id CDATA "ID_3">
+<!ENTITY age "21">
+<!ENTITY name "Fahad">
+
+]>
+<studentdetails>
+
+<student id="ID_1">
+<name> &name; </name>
+<age> &age; </age>
+<course>HTML</course>
+</student>
+
+<student id="ID_2">
+<name>Fawed</name>
+<age> &age; </age>
+<course>CSS</course>
+</student>
+
+<student id="ID_3">
+<name>Baber</name>
+<age> &age; </age>
+<course>JAVA</course>
+</student>
+
+</studentdetails>
